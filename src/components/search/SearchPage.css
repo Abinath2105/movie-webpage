@@ -1,0 +1,218 @@
+/* SearchPage.css */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000; /* Black background for the entire page */
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.search-container {
+    position: relative;
+    max-width: 500px; /* Adjust as needed */
+    margin: auto;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 50px; /* Space for the icon */
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor:pointer;
+    color: #007bff;
+    font-size: 18px;
+}
+
+.search-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    z-index: 10;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 0 0 30px 30px; /* Match the rounded corners */
+}
+
+.search-list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.search-list-item:hover {
+    background-color: #f9f9f9;
+}
+
+.search-item-thumbnail {
+    flex: 0 0 100px; /* Adjust width as needed */
+    margin-right: 15px;
+}
+
+.search-item-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.search-item-info {
+    flex: 1;
+}
+
+.search-item-info h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.search-item-info p {
+    margin: 0;
+    color: #555;
+}
+
+.load-more {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.result-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%; /* Full width of the container */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 20px; /* Increased padding for spacing */
+    box-sizing: border-box;
+}
+
+.movie-info {
+    flex: 1;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #333; /* Dark text color */
+    order: 1; /* Ensures information is on the left */
+}
+
+.movie-card img {
+    flex: 0 0 200px; /* Fixed width for image */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    order: 2; /* Ensures image is on the right */
+    margin-left: 20px; 
+    margin-right: 20px;/* Space between image and info */
+}
+
+/* Ensure image and info have equal height */
+.movie-card > div,
+.movie-card img {
+    height: 100%;
+}
+
+.movie-title {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.movie-misc-info {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.movie-misc-info li {
+    margin-bottom: 5px;
+}
+
+.movie-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.awards {
+    display: flex;
+    align-items: center;
+}
+
+.awards i {
+    margin-right: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .movie-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .movie-info {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .movie-card img {
+        width: 100%;
+        height: auto;
+        margin-left: 0; /* Remove margin on smaller screens */
+        order: 1; /* Image goes on top in column layout */
+    }
+}
