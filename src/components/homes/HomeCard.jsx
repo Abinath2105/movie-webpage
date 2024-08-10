@@ -11,13 +11,13 @@ const HomeCard = ({ item: { id, cover, name, rating, time, desc, starring, genre
         <div className='content flex'>
           <div className='details row'>
             <h1>{name}</h1>
-            <div className='rating flex'>
-              <div className='rate'>
+              <div className='rating flex'>
+               <div className='rate'>
                 <i className='fas fa-star'></i>
                 <i className='fa fa-star'></i>
                 <i className='fa fa-star'></i>
                 <i className='fa fa-star'></i>
-                <i className='fa fa-star-half'></i>
+                <i className='fa fa-star-half'></i> 
               </div>
               <label>{rating}(Imdb)</label>
               <span>GP</span>
