@@ -13,7 +13,7 @@ const Header = () => {
               <img src='./images/logo1.png' alt='' />
             </div>
             <ul className={Mobile ? "navMenu-list" : "flexSB"} onClick={() => setMobile(false)}>
-              <li>
+              <li>    
                 <Link to='/'>Home</Link>
               </li>
               <li>
@@ -26,7 +26,7 @@ const Header = () => {
                 <Link to='/series'>Series</Link>
               </li>
               <li>
-                <Link to='/tvshow'>TV Shows</Link>
+                <Link to='/tvshow'>TV </Link>
               </li>
               <li>
                 <Link to='/sports'>Sports</Link>
@@ -38,8 +38,8 @@ const Header = () => {
           </nav>
           <div className='account flexSB'>
           <Link to='/search'> <i className='fa fa-search'></i></Link>
-            <i className='fas fa-bell'></i>
-            <i className='fas fa-user'></i>
+            {/*<i className='fas fa-bell'></i>
+            <i className='fas fa-user'></i>*/}
             <button>Subscribe Now</button>
           </div>
         </div>
