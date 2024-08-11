@@ -122,6 +122,7 @@
     position: relative;
     margin: 0;
     height: 100vh !important;
+    padding: 10px;
   }
   .coverImage img {
     width: 100vw;
