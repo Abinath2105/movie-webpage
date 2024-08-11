@@ -24,7 +24,7 @@ const Footer = () => {
             <i className='fab fa-instagram'></i>
           </div>
           <div className='box'>
-            <h3>Tentkotta App</h3>
+            <h3>Abiflix App</h3>
             <div className='img flexSB'>
               <img src='https://img.icons8.com/color/48/000000/apple-app-store--v3.png' />
               <span>App Store</span>

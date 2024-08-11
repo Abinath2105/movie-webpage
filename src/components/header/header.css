@@ -8,6 +8,7 @@ header {
   left: 0;
   width: 100%;  /* Full width */
   z-index: 999; /* Ensures it is above other elements */
+  
 }
 
 .account .flexSB {
@@ -16,7 +17,7 @@ header {
 
 .logo img {
   width: 150px;
-  margin-top: 20px;
+  margin-bottom: -20px;
   margin-right: 30px;
 }
 
