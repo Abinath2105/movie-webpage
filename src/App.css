@@ -143,12 +143,12 @@ p {
     cursor: pointer;
   }
   .MovieBox .text {
-    padding: 40px 20px;
+    padding: 8px 5px;
   }
   .MovieBox h3 {
     font-weight: 500;
-    margin-bottom: 15px;
-    padding: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
   }
 
 }
