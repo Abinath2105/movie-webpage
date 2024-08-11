@@ -12,15 +12,16 @@
   }
   .trending {
     position: relative;
-    height: 60vh !important;
+    height: 90vh !important;
+    padding: 10px;
   }
   .trending .coverImage img {
     width: 100vw;
-    height: 70vh !important;
+    height: 100vh !important;
   }
   .trending .content {
     flex-direction: column;
-    padding: 50px;
+    padding: 10px;
   }
   .trending .row {
     width: 100%;

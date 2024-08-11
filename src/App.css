@@ -130,7 +130,23 @@ p {
 /*---------------MovieBox-------------*/
 @media only screen and (max-width: 768px) {
   .MovieBox {
-    width: 320px;
+    width: 330px;
     height: 250px;
+    padding: 10px;
   }
+  .MovieBox button {
+    margin-top: 15px;
+    padding: 7px 10px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .MovieBox .text {
+    padding: 40px 20px;
+  }
+  .MovieBox h3 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
 }
