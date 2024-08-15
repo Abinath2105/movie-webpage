@@ -162,4 +162,10 @@
     height: 100% !important;
     object-fit: contain;
   }
+  .home {
+    position: relative;
+    margin: 0;
+    height: 50vh !important;
+    padding: 50px;
+  }
 }
