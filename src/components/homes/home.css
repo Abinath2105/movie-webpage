@@ -159,5 +159,8 @@
   .palyButton {
     display: none;
   }
+  .coverImage{
+    object-fit: cover;
+  }
   
 }
