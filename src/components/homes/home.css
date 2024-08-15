@@ -142,3 +142,16 @@
     margin-top: 0% !important;
   }
 }
+@media only screen and (max-width: 480px) {
+  .homeContainer h1 {
+    font-size: 8vw;
+  }
+
+  .rating label, .rating span, .cast h4, .cast h4 span {
+    font-size: 2.5vw;
+  }
+
+  .palyButton {
+    display: none;
+  }
+}
