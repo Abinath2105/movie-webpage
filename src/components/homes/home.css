@@ -150,6 +150,9 @@
   .rating label, .rating span, .cast h4, .cast h4 span {
     font-size: 2.5vw;
   }
+  .rating span{
+    display: none;
+  }
 
   .palyButton {
     display: none;
