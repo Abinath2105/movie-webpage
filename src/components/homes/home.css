@@ -153,10 +153,11 @@
   .rating span{
     display: none;
   }
-
+  .cast h4{
+    display: none;
+  }
   .palyButton {
     display: none;
   }
-  
   
 }
