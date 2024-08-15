@@ -84,4 +84,7 @@ header button {
     cursor: pointer;
     background: none;
   }
+  .logo img {
+    padding: 10px;
+  }
 }
