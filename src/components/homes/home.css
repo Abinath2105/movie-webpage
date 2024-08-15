@@ -157,4 +157,8 @@
   .palyButton {
     display: none;
   }
+  .coverImage img {
+    width: 100%;
+    height: 70vh !important;
+  }
 }
